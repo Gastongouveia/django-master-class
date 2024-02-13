@@ -4,7 +4,7 @@ from django.db import models
 class BlogPost(models.Model):
     title = models.CharField(max_length=100, verbose_name='título')
     body = models.TextField(verbose_name='corpo')
-    is_premium = models.BooleanField(default=False)
+    is_premium = models.BooleanField(default=False, verbose_name= 'premium?')
     created_at = models.DateTimeField(verbose_name='criado em')
     created_by = models.ForeignKey(
         settings.AUTH_USER_MODEL, 
