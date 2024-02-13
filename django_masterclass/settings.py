@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     
     # local
-    'blog'
+    'blog',
     'user'
 ]
 
